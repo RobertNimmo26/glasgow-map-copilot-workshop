@@ -10,7 +10,7 @@ This repository is a sandbox for experimenting with GitHub Copilot, Copilot Chat
 
 ## Developer Workflows
 - **Run the app:**
-  - Install dependencies: `pip install flask`
+  - Install dependencies: `pip install flask folium`
   - Start server: `python3 app.py`
   - Access at: `http://localhost:5000/`
 - **No virtual environment is required.** Use system Python and pip for simplicity.
