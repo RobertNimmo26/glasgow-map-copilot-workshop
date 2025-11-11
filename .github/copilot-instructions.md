@@ -1,7 +1,7 @@
 # 🧑‍💻 Copilot Coding Agent Instructions for Glasgow Workshop
 
 ## Project Overview
-This repository is a sandbox for experimenting with GitHub Copilot, Copilot Chat, and the Copilot Coding Agent. The main example is a minimal Flask app (`app.py`) that serves "Hello World" at the root URL. The project is designed for rapid prototyping and learning Copilot workflows, not for production use.
+This repository is a sandbox for experimenting with GitHub Copilot, Copilot Chat, and the Copilot Coding Agent. The main example is a minimal Flask app (`app.py`) that serves a Glasgow Tree Preservation Map at the root URL. The project is designed for rapid prototyping and learning Copilot workflows, not for production use.
 
 ## Architecture & Key Files
 - `app.py`: Minimal Flask web server. Entry point for all code experiments.
