@@ -12,7 +12,7 @@ def generate_color_from_text(text):
         text = "unknown"
     
     # Use hash to generate consistent color for same text
-    hash_hex = hashlib.md5(text.encode()).hexdigest()
+    hash_hex = hashlib.sha256(text.encode()).hexdigest()
     
     # Use different parts of the hash for hue, saturation, and lightness to reduce collisions
     hue = int(hash_hex[:8], 16) % 360
