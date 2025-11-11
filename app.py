@@ -3,6 +3,7 @@ from flask import Flask, render_template_string
 import folium
 import json
 import hashlib
+import os
 
 app = Flask(__name__)
 
@@ -94,4 +95,6 @@ def glasgow_map():
     return render_template_string(html)
 
 if __name__ == '__main__':
-        app.run(host='0.0.0.0', port=5000)
+    # Use environment variable to control debug mode, default to False for production safety
+    debug_mode = os.getenv('FLASK_DEBUG', 'False').lower() in ('true', '1', 'yes')
+    app.run(host='0.0.0.0', port=5000, debug=debug_mode)
